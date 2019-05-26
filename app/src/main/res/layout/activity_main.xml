@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextureView
+    android:id="@+id/leftView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/rightImageView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <!--<TextureView-->
+    <!--android:id="@+id/rightView"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/guideline"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.0" />-->
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.5" />
+
+
+  <ImageView
+    android:id="@+id/leftImageView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:adjustViewBounds="false"
+    android:scaleType="matrix"
+    android:src="@drawable/button_pressed"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:srcCompat="@drawable/button_unpressed" />
+
+  <ImageView
+    android:id="@+id/rightImageView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:adjustViewBounds="false"
+    android:scaleType="matrix"
+    android:src="@drawable/button_pressed"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/guideline"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:srcCompat="@drawable/button_unpressed" />
+
+
+  <ImageButton
+    android:id="@+id/leftCaptureButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/round_button_background"
+    android:scaleX="3"
+    android:scaleY="3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/camera" />
+
+  <ImageButton
+    android:id="@+id/leftResetButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/round_button_background"
+    android:scaleX="3"
+    android:scaleY="3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/reset" />
+
+  <ImageButton
+    android:id="@+id/rightCaptureButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/round_button_background"
+    android:scaleX="3"
+    android:scaleY="3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline"
+    app:srcCompat="@drawable/camera" />
+
+  <ImageButton
+    android:id="@+id/rightResetButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/round_button_background"
+    android:scaleX="3"
+    android:scaleY="3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline"
+    app:srcCompat="@drawable/reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
