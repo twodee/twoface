@@ -139,6 +139,8 @@ class MainActivity : PermittedActivity() {
     xform.postRotate(-viewToRotation(previewView).toFloat(), centerX, centerY)
     xform.preScale(scaledWidth / previewView.width.toFloat(), scaledHeight / previewView.height.toFloat(), centerX, centerY)
 
+    Bitmap.crea
+
     previewView.setTransform(xform)
   }
 
